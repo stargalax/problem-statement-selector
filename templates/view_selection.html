@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Selections</title>
+</head>
+<body>
+    <h1>Student Selections</h1>
+    <table border="1">
+        <tr>
+            <th>Team Name</th>
+            <th>Lead Name</th>
+            <th>Problem Statement</th>
+        </tr>
+        {% for team_name, lead_name, problem_statement in selections %}
+        <tr>
+            <td>{{ team_name }}</td>
+            <td>{{ lead_name }}</td>
+            <td>{{ problem_statement }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
